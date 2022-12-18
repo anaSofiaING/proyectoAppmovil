@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tono_azul"
+    android:padding="30dp"
+    tools:context=".Menu">
+
+    <LinearLayout
+        android:layout_width="358dp"
+        android:layout_height="644dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnImgPerfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:backgroundTint="#00FFFFFF"
+                android:src="@mipmap/ic_perfil_round" />
+
+            <!--            aqui se muestra el nombre del usuario-->
+            <TextView
+                android:id="@+id/NomPerfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:backgroundTint="#00452929"
+                android:text="Usuario"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="#6200EA"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnVerPerf"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#00FFFFFF"
+            android:text="Ver mi perfil"
+            android:textAlignment="textEnd"
+            android:textAllCaps="false"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnBuscaDoc"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#00FFFFFF"
+            android:text="Doctores"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+
+
+        <Button
+            android:id="@+id/btnMensajes"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#00FFFFFF"
+            android:text="Mensajes"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnSalir"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#00FFFFFF"
+            android:text="Cerrar Sesion"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:src="@drawable/ic_sinmenu_foreground"
+            app:maxImageSize="50dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
